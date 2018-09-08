@@ -1,14 +1,14 @@
 {
-  "name": "vibrio",
+  "name": "pushpipe",
   "version": "0.1.0",
   "description": "A simple queue stream package.",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/drewsortega/vibrio.git"
+    "url": "git+https://github.com/drewsortega/pushpipe.git"
   },
   "keywords": [
     "stream",
@@ -17,7 +17,18 @@
   "author": "Drew S Ortega",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/drewsortega/vibrio/issues"
+    "url": "https://github.com/drewsortega/pushpipe/issues"
   },
-  "homepage": "https://github.com/drewsortega/vibrio#readme"
+  "homepage": "https://github.com/drewsortega/pushpipe#readme",
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "chai-as-promised": "^7.1.1",
+    "events": "^3.0.0",
+    "fs-extra": "^7.0.0",
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
 }
